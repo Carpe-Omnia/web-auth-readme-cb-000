@@ -1400,3 +1400,11 @@ Processing by SearchesController#foursquare as HTML
 Completed 200 OK in 138ms (Views: 53.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/search" for 96.248.74.192 at 2019-03-04 19:17:32 +0000
+Cannot render console from 96.248.74.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
