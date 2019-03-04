@@ -1442,3 +1442,25 @@ Cannot render console from 96.248.74.192! Allowed networks: 127.0.0.1, ::1, 127.
 Processing by SearchesController#search as HTML
   Rendering searches/search.html.erb within layouts/application
   Rendered searches/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 241ms (Views: 232.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 96.248.74.192 at 2019-03-04 19:18:38 +0000
+Cannot render console from 96.248.74.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yFvEMfE5iSUea2x13ieR2s09JAsKKXPHUndZy+hxRD/tYD/Q3znRbgu9oGJaeIo8l/eeMhTsu4OL9lAhlp62Cw==", "zipcode"=>"08540", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 233ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 96.248.74.192 at 2019-03-04 19:23:41 +0000
+Cannot render console from 96.248.74.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#friends as HTML
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/searches_controller.rb:37:in `friends'
